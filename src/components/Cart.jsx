@@ -20,7 +20,7 @@ const Cart = () => {
         <>
           {cartItems.map((item) => (
             <div key={item.id} className="cart-item">
-              <img src={`http://localhost:8085/api/products/images/${item.imagePath}`} alt={item.name} />
+              <img src={`http://localhost:9090/ecommerce-1.0.0/api/products/images/${item.imagePath}`} alt={item.name} />
               <h4>{item.name}</h4>
               <p>${item.price}</p>
               <button onClick={() => removeFromCart(item.id)}>Remove</button>
